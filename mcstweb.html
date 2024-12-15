@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="img/logo.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>MCST</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- for animation -->
+  
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--HEADER SECTION-->
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="mcstweb.html">
+          <img src="img/header.png" alt="MCST Logo" class="header-logo" />
+
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="mcstweb.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="news.html">News & Events</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--END HEADER SECTION-->
+  <!--SLIDER SECTION-->
+  <section class="slider">
+    <div class="slider_bg_box">
+      <img src="img/banner.jpeg" alt="">
+    </div>
+    <div class="slider_bg"></div>
+    <div class="container">
+      <div class="col-md-9 col-lg-8">
+        <div class="detail-box">
+          <h1>
+            Greetings,
+            <br> Future Professionals
+          </h1>
+          <h6>
+            Unlock your future in technology and innovation by enrolling in MCST, where you'll gain the skills and
+            hands-on experience to thrive in today's digital world.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END SLIDER SECTION-->
+
+  <!-- COURSES SECTION -->
+  <section id="courses" class="courses" data-aos="fade-in">
+    <h1>Courses We Offer</h1>
+    <div class="row">
+      <div class="course-col" data-aos="fade-right">
+        <h3>Bachelor of Science in Information Systems</h3>
+        <p>Bachelor of Science in Information Systems. It is a degree program that prepares students to design,
+          implement, and manage technology solutions for businesses. It combines technical skills with business
+          knowledge, equipping graduates for careers in IT management, systems analysis, and technology-driven
+          decision-making.</p>
+      </div>
+      <div class="course-col" data-aos="fade-left">
+        <h3>Bachelor of Science in Mathematics</h3>
+        <p>A Bachelor of Science in Mathematics is a degree program that focuses on developing strong analytical,
+          problem-solving, and mathematical skills. Students learn advanced mathematical concepts and techniques,
+          preparing them for careers in fields such as finance, data analysis, teaching, or research.</p>
+      </div>
+      <div class="course-col" data-aos="fade-up">
+        <h3>Bachelor of Arts in Communication</h3>
+        <p>A Bachelor of Arts in Communication is a degree program that focuses on developing skills in effective
+          written, verbal, and digital communication. Students study areas such as media, public relations, journalism,
+          and interpersonal communication, preparing them for careers in media, corporate communication, marketing, and
+          more.</p>
+      </div>
+    </div>
+  </section>
+  </section>
+  <div id="courseModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="courseTitle"></h2>
+      <p id="courseDescription"></p>
+    </div>
+  </div>
+  <div class="enroll-now">
+    <a href="enroll.html" class="enroll-btn">Enroll Now</a>
+  </div>
+  <br><br><br>
+  <!-- END COURSES SECTION -->
+
+  <!-- ABOUT SECTION -->
+  <section class="about" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="img/gym.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              Mandaluyong College of Science and Technology (MCST) is the first higher education institution in
+              Mandaluyong to provide free college education for local students. With state-of-the-art facilities, MCST
+              ensures students have the resources they need to complete their studies. The college offers scholarships
+              and free access to amenities such as the gym, library, e-library, computer labs, and more. In
+              collaboration with the Mandaluyong City Local Government Unit (LGU), MCST also provides students with
+              essential items like PE uniforms for their PATH-FIT courses, as well as free IDs and lanyards. MCST
+              officially opened on September 23, 2023, and is now welcoming its second batch of enrollees.
+            </p>
+            <a href="about.html" class="about-btn mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <!-- END ABOUT SECTION -->
+  <!-- NEWS SECTION -->
+  <section class="news" data-aos="fade-in">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Latest News & Events
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/vawc.jpeg" alt="" style="max-width:100%; height:auto;">
+              <div class="overlay">
+                <a href="news.html">Read More</a>
+                <h4 class="blog_date">
+                  28 <br>
+                  November 2024
+                </h4>
+              </div>
+            </div>
+            <div class="detail-box">
+
+              <h5>
+                𝗠𝗖𝗦𝗧 𝗝𝗼𝗶𝗻𝘀 𝘁𝗵𝗲 18-𝗗𝗮𝘆 𝗖𝗮𝗺𝗽𝗮𝗶𝗴𝗻 𝘁𝗼 𝗘𝗻𝗱 𝗩𝗶𝗼𝗹𝗲𝗻𝗰𝗲 𝗔𝗴𝗮𝗶𝗻𝘀𝘁
+                𝗪𝗼𝗺𝗲𝗻 𝗮𝘁 𝗠𝗖𝗦𝗧 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲 𝗖𝗲𝗻𝘁𝗲𝗿, 𝗡𝗼𝘃𝗲𝗺𝗯𝗲𝗿 28, 2024
+              </h5>
+              <p>
+                The tagline ng Philippine Commission on Women for the 2024 campaign in raising our voices, raising
+                awareness, and advocating for a world free from violence and discrimination against women. Based on the
+                assessment of the Anti-VAWC Act of 2004 (RA 9262), which celebrates its 20th signing anniversary.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="box">
+            <div class="img-box">
+              <img src="img/ly.jpeg" alt="" style="max-width:100%; height:auto;">
+              <div class="overlay">
+                <a href="news.html">Read More</a>
+                <h4 class="blog_date">
+                  20 <br>
+                  November 2024
+                </h4>
+              </div>
+            </div>
+            <div class="detail-box">
+              <h5>
+                𝗠𝗖𝗦𝗧 𝗟𝗲𝗮𝗱𝗲𝗿𝘀𝗵𝗶𝗽 𝗦𝗲𝗺𝗶𝗻𝗮𝗿: 𝗜-𝗔𝗡𝗚𝗔𝗧 𝗡𝗔𝗧𝗜𝗡 𝗔𝗡𝗚 𝗠𝗖𝗦𝗧!
+              </h5>
+              <p>
+                Noong nakaraang Miyerkules, Nobyembre 20, nagtipon-tipon ang ating mga Kodlings mula sa iba't ibang
+                student organizations para sa isang araw ng pagkatuto, pagkakaisa, at pagkakapit-bisig! Ito'y may
+                temang: 𝗟𝗲𝗮𝗱𝗶𝗻𝗴 𝗯𝘆 𝗘𝘅𝗮𝗺𝗽𝗹𝗲 𝗔𝗱𝘃𝗼𝗰𝗮𝘁𝗶𝗻𝗴 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗶𝗻𝗴 𝗮𝗻𝗱
+                𝗘𝗹𝗲𝘃𝗮𝘁𝗶𝗻𝗴 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝘆.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4" data-aos="fade-up">
+        <a href="news.html" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <!-- END NEWS SECTION -->
+  <!-- FEEDBACKS SECTION -->
+  <section class="feedbacks">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Feedbacks
+        </h2>
+      </div>
+
+      <head>
+        <style>
+          .carousel-item p {
+            color: #ffffff;
+            /* Change this to the color of your choice */
+            font-weight: bold;
+            /* Makes the text bold */
+            font-size: 18px;
+            /* Adjusts the font size */
+          }
+        </style>
+      </head>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="img/passionfruit.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Emmanuel Padilla
+                      </h6>
+                    </div>
+                    <p>
+                    
+                      I had an incredible experience at MCST. The faculty were knowledgeable and supportive, providing a
+                      strong foundation in both theory and practical skills. The campus environment fostered creativity
+                      and collaboration, allowing me to grow both personally and professionally. I truly appreciate the
+                      opportunities for hands-on learning and the connections I made with industry professionals.
+                      Overall, MCST helped me develop the confidence and expertise needed to succeed in my career.
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="img/gyorou.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Kurt Gerald N. Ocampo
+                      </h6>
+                    </div>
+                    <p>
+                      MCST provided an excellent learning experience. The professors were supportive, and the hands-on
+                      opportunities helped me build real-world skills. I feel well-prepared for my career and grateful
+                      for the connections I made.
+
+
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="img/flacko.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Mark William Perante
+                      </h6>
+                    </div>
+                    <p>
+                      the staffs are very professional and the environment is clean.
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END FEEDBACKS SECTION -->
+  <!-- INFO SECTION -->
+  <section class="info">
+    <div class="container">
+      <div class="row info_form_social_row">
+        <div class="col-md-8 col-lg-9">
+          <div class="info_form">
+
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+
+          <div class="social_box">
+            <a href="https://www.facebook.com/MandaluyongCST">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_links">
+            <h4>
+              Menu
+            </h4>
+            <div class="info_links_menu">
+              <a href="mcstweb.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="courses.html">Courses</a>
+              <a href="news.html">News & Events</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="info_contact">
+            <a href="https://maps.app.goo.gl/KyKVrnc8v5Et6QXb9">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Welfareville Compound, Brgy. Addition Hills, Mandaluyong, Philippines
+              </span>
+            </a>
+            <a href="287160352">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call 287160352
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                mcst@mandaluyong.gov.ph
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END INFO SECTION -->
+  <!-- FOOTER SECTION-->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Duration of the animation in milliseconds
+      once: true, // Whether animation should happen only once while scrolling
+    });
+  </script>
+
+</body>
+
+</html>
+</body>

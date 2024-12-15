@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Timeline Search</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0, 128, 128, 0.348), rgba(0, 0, 128, 0.227)), 
+                        url("C:\Users\ASUS TUF GAMING\Documents\bulbol\ITC Project\MCST WebSite-20241210T004430Z-001\MCST WebSite\img\gym.jpg") no-repeat center center/cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .search-container {
+            text-align: center;
+        }
+
+        .search-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: teal;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: darkcyan;
+        }
+    </style>
+    <script>
+        function searchYear() {
+            const year = document.getElementById('yearInput').value;
+            if (year) {
+                // Replace this with your own URL mapping for specific years
+                const baseUrl = "https://example.com/timeline/";
+                window.location.href = `${baseUrl}${year}`;
+            } else {
+                alert("Please enter a year.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Historical Timeline Search</h1>
+        <input id="yearInput" type="text" class="search-bar" placeholder="Enter a year (e.g., 1776)">
+        <button class="search-button" onclick="searchYear()">Search</button>
+    </div>
+</body>
+</html>

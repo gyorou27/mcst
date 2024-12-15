@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="img/logo.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Contact Us: MCST</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007bff00, #5a67d800);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-image: linear-gradient(rgba(49, 89, 250, 0.897), rgba(255, 255, 255, 0.616)), url(img/aboutus.jpg);
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-section {
+      padding: 50px;
+      width: 200%;
+      max-width: 900px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      margin: 40px auto;
+      border-radius: 30px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-section h1 {
+      color: #fff;
+      font-size: 36px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      color: #dcdcdc;
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 2.5;
+    }
+
+    .contact-form {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #f8f9fa;
+      font-size: 14px;
+    }
+
+    .contact-form button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      background: none;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      padding: 100px 0;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      width: 60%;
+    }
+
+    /* Hidden confirmation message */
+    .confirmation-message {
+      display: none;
+      color: #28a745;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    /* Back to Home button style */
+    .back-home-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-home-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+  <script>
+    // Function to display the confirmation message below the form
+    function showConfirmation() {
+      // Hide the form and show the confirmation message
+      document.getElementById("contact-form").style.display = "none";
+      document.getElementById("confirmation-message").style.display = "block";
+      document.getElementById("back-home-btn").style.display = "inline-block"; // Show the back home button
+    }
+  </script>
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="mcstweb.html">
+          <img src="img/header.png" alt="MCST Logo" class="header-logo" />
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="mcstweb.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="news.html">News & Events</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <div class="container">
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>Feel free to reach out for any inquiries, suggestions, or support. We’re here to help!</p>
+      <form id="contact-form" class="contact-form" action="submit_contact.php" method="POST" onsubmit="showConfirmation(); return false;">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Hidden confirmation message -->
+      <div id="confirmation-message" class="confirmation-message">
+        Thank you for contacting us! Your message has been sent successfully.
+      </div>
+
+      <!-- Back to Home button -->
+      <button id="back-home-btn" class="back-home-btn" style="display: none;" onclick="window.location.href='mcstweb.html'">Back to Home</button>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 Mandaluyong College of Science and Technology. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

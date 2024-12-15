@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/logo.png" type="image/gif" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form:MCST</title>
+    <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #007bff00, #5a67d800);
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            background-image: linear-gradient(rgba(49, 89, 250, 0.897),rgba(255, 255, 255, 0.616)),url(img/enroll.jpg);
+        }
+        .container {
+            background: linear-gradient(135deg, #2b4eec, #e6e7fa);
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+            color: #fffdfd;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            display: none;
+        }
+        .form-container.active {
+            display: block;
+        }
+        .form-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-container input,
+        .form-container select,
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .toggle-btn {
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+        .thank-you-message {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="mcstweb.html">
+              <img src="img/header.png" alt="MCST Logo" class="header-logo" />
+              
+            </a>
+            <div class="" id="">
+    
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+                <div id="myNav" class="overlay">
+                  <div class="overlay-content">
+                    <a href="mcstweb.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="news.html">News & Events</a>
+                    <a href="contact.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </nav>
+        </div>
+      </header>
+      
+
+      
+
+    <div class="container">
+        <h1>Admission Form</h1>
+        
+        <!-- Login Form -->
+        <div class="form-container" id="loginForm">
+            <form id="loginForm" onsubmit="return validateLoginForm(event)">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <span class="toggle-btn" onclick="showSignUpForm()">Sign up</span></p>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <div class="form-container" id="signUpForm">
+            <form id="signupForm" onsubmit="return validateSignUpForm(event)">
+                <label for="signupEmail">Email Address</label>
+                <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" placeholder="Create a password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <span class="toggle-btn" onclick="showLoginForm()">Log in</span></p>
+        </div>
+
+        <!-- Application Form -->
+        <div class="form-container" id="applicationForm">
+            <form id="applicationForm" onsubmit="return validateApplicationForm(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="">--Select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="course">Course Choice</label>
+                <select id="course" required>
+                    <option value="">--Select--</option>
+                    <option value="BSIS">BSIS</option>
+                    <option value="BSMath">BSMath</option>
+                    <option value="ABCom">ABCom</option>
+                </select>
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+
+
+        <div class="thank-you-message" id="thankYouMessage">
+          <p>Thank you for completing your application. Please wait for the exam date announcement.</p>
+        </div>
+    </div>
+
+
+    <script>
+        function showLoginForm() {
+            document.getElementById('loginForm').classList.add('active');
+            document.getElementById('signUpForm').classList.remove('active');
+            document.getElementById('applicationForm').classList.remove('active');
+        }
+
+        function showSignUpForm() {
+            document.getElementById('signUpForm').classList.add('active');
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('applicationForm').classList.remove('active');
+        }
+
+        function showApplicationForm() {
+            document.getElementById('applicationForm').classList.add('active');
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('signUpForm').classList.remove('active');
+        }
+
+        function validateLoginForm(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+
+            if (!email || !password) {
+                alert('Please fill out all fields.');
+                return false;
+            }
+
+            showApplicationForm();
+        }
+
+        function validateSignUpForm(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            const email = document.getElementById('signupEmail').value.trim();
+            const password = document.getElementById('signupPassword').value.trim();
+
+            if (!email || !password) {
+                alert('Please fill out all fields.');
+                return false;
+            }
+
+            showApplicationForm();
+        }
+
+        function validateApplicationForm(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            const name = document.getElementById('name').value.trim();
+            const dob = document.getElementById('dob').value.trim();
+            const gender = document.getElementById('gender').value;
+            const course = document.getElementById('course').value;
+
+            if (!name || !dob || !gender || !course) {
+                alert('Please fill out all fields.');
+                return false;
+            }
+
+            submitApplication();
+        }
+
+        function submitApplication() {
+            document.getElementById('applicationForm').classList.remove('active');
+            document.getElementById('thankYouMessage').style.display = 'block';
+        }
+
+        // Show login form by default
+        showLoginForm();
+    </script>
+    <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+</body>
+</html>

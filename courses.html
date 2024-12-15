@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="img/logo.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Courses:MCST</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #007bff44, #5a67d800);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      background-image: linear-gradient(rgba(49, 89, 250, 0.897), rgba(255, 255, 255, 0.616)), url(img/acadbldg.jpg);
+      flex-direction: column;
+    }
+
+    .content-container {
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .course-card {
+      background-color: rgba(10, 55, 117, 0.593);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.5s ease;
+      transform: scale(1);
+    }
+
+    .course-card:hover {
+      transform: scale(1.05);
+      background-color: rgba(6, 21, 64, 0.725);
+    }
+
+    .course-card h3 {
+      color: #fff;
+      font-size: 1.6em;
+      margin-bottom: 15px;
+    }
+
+    .course-card p,
+    .course-card li {
+      color: #ccc;
+      font-size: 1.1em;
+      display: none;
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .course-card.expanded {
+      grid-column: span 3;
+      transform: scale(1.1);
+    }
+
+    .course-card.expanded p,
+    .course-card.expanded li{
+      display: block;
+    }
+
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.5s ease;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--HEADER SECTION-->
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="mcstweb.html">
+          <img src="img/header.png" alt="MCST Logo" class="header-logo" />
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="mcstweb.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="news.html">News & Events</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <h1>COURSES WE OFFER</h1>
+  <div class="content-container">
+    <div class="grid-container">
+      <div class="course-card" onclick="toggleCourse(this)">
+        <h3>Bachelor of Science in Information System (BSIS)</h3>
+       
+        <p>Bachelor of Science in Information Systems. It is a degree program that prepares students to design,
+             implement, and manage technology solutions for businesses. It combines technical skills with business knowledge, 
+             equipping graduates for careers in IT management, systems analysis, and technology-driven decision-making.</p>
+             <ul>
+              <li><strong>Why Choose BSIS at MCST?</strong></li>
+              <li>
+                <strong>Comprehensive Curriculum:</strong> Gain expertise in key areas such as systems analysis and design, database management, IT project management, business analytics, and cybersecurity.
+              </li>
+              <li>
+                <strong>Hands-On Learning:</strong> Apply theoretical knowledge through real-world projects, internships, and collaborations with industry partners.
+              </li>
+              <li>
+                <strong>Industry-Ready Skills:</strong> Develop competencies in solving complex business problems using technology while enhancing communication, leadership, and teamwork skills.
+              </li>
+              <li>
+                <strong>State-of-the-Art Facilities:</strong> Access modern computer labs, software tools, and learning resources to support your academic and professional growth.
+              </li>
+            </ul>
+            
+          <li><strong>Career Opportunities</strong></li>
+            <ul>
+              <li>• Graduates of the BSIS program can pursue a wide range of careers, including:</li>
+              <li>• Systems Analyst</li>
+              <li>• IT Project Manager</li>
+              <li>• Database Administrator</li>
+              <li>• Business Analyst</li>
+              <li>• IT Consultant</li>
+              <li>• Software Quality Assurance Specialist</li>
+              <li>• Information Security Analyst</li>
+            </ul>
+            
+            <li><strong>Program Highlights</strong></li>
+            <li>
+              <li>• Duration: 4 years</li>
+              <li>• Practical Training: Internship opportunities with top companies</li>
+              <li>• Capstone Projects: Develop innovative IT solutions for real-world challenges</li>
+            </ul>
+            
+          <li><strong>Join Us Today!</strong></li>
+            <p>Be part of a dynamic community that values innovation, collaboration, and excellence. Enroll in the BSIS program at Mandaluyong College of Science and Technology and take the first step toward a successful career in technology and business.</p>
+            
+      </div>
+
+      <div class="course-card" onclick="toggleCourse(this)">
+        <h3>Bachelor of Science in Mathematics</h3>
+        <p>A Bachelor of Science in Mathematics is a degree program that focuses on developing strong analytical, problem-solving, 
+            and mathematical skills. Students learn advanced mathematical concepts and techniques,
+             preparing them for careers in fields such as finance, data analysis, teaching, or research.</p>
+             <ul>
+              <li><strong>Why Choose BSMATH at MCST?</strong></li>
+              <li>
+                <strong> Rigorous and Comprehensive Curriculum:</strong> The program covers key areas of mathematics, including:
+
+                <li>• Calculus and Advanced Calculus</li>
+              <li>• Linear Algebra and Abstract Algebra</li>
+            <li>•  Differential Equations</li>
+          <li>• Probability and Statistics</li>
+        <li>• Mathematical Modeling</li>
+      <li>• Real and Complex Analysis</li>
+              </li>
+              <li>
+                <strong>Hands-On Learning:</strong> pply theoretical knowledge in mathematics through research projects, internships, and collaborations with academic institutions and industry partners.
+              </li>
+              <li>
+                <strong>Industry-Ready Skills:</strong>Develop expertise in solving complex mathematical and business problems using advanced computational tools and mathematical models, while enhancing communication, leadership, and teamwork abilities to effectively collaborate in diverse, multidisciplinary environments.
+              </li>
+            
+            </ul>
+             <li><strong>Career Opportunities</strong></li>
+            <ul>
+              <li> Graduates of the BSIS program can pursue a wide range of careers, including:</li>
+              <li>• Mathematics Educator/Professor</li>
+              <li>• Data Scientist/Analyst</li>
+              <li>• Statistician</li>
+              <li>• Business Analyst</li>
+              <li>• Mathematics Educator/Professor</li>
+            
+            </ul>
+            
+          
+            
+          <li><strong>Join Us Today!</strong></li>
+            <p>Be part of a dynamic community that values analytical thinking, problem-solving, and excellence. Enroll in the BS Mathematics program and unlock your potential to tackle complex challenges through innovation, collaboration, and mathematical expertise.</p>
+            
+                
+      </div>
+
+      <div class="course-card" onclick="toggleCourse(this)">
+        <h3>Bachelor of Arts in Communication</h3>
+        <p>A Bachelor of Arts in Communication is a degree program that focuses on developing skills in effective written, 
+            verbal, and digital communication. Students study areas such as media, public relations, journalism, and interpersonal 
+            communication, preparing them for careers in media, corporate communication, marketing, and more.</p>
+            <ul>
+              <li><strong>Why Choose ABCOM at MCST?</strong></li>
+              <li>
+                <strong> Rigorous and Comprehensive Curriculum:</strong> The program covers key areas of mathematics, including:
+
+                <li>• Communication Theory and Practices</li>
+              <li>• Media and Society</li>
+            <li>•  Public Speaking and Presentation Skills</li>
+          <li>•Digital Communication and Social Media</li>
+        <li>• Broadcasting and Film Production</li>
+      <li>• Interpersonal and Organizational Communication</li>
+              </li>
+              <li>
+                <strong>Hands-On Learning:</strong>  Apply theoretical knowledge in communication through real-world projects, internships, and collaborations with media organizations, communication agencies, and industry partners.
+              </li>
+              <li>
+                <strong>Industry-Ready Skills:</strong>Develop expertise in creating compelling content, mastering digital communication tools, and applying media strategies while honing communication, leadership, and teamwork skills to effectively collaborate in fast-paced, multidisciplinary environments.
+              </li>
+            
+            </ul>
+             <li><strong>Career Opportunities</strong></li>
+             <ul>
+              <li>Graduates of the AB Communication program can pursue a wide range of careers, including:</li>
+              <li>• Media Analyst</li>
+              <li>• Public Relations Specialist</li>
+              <li>• Broadcast Journalist</li>
+              <li>• Social Media Manager</li>
+              <li>• Communication Consultant</li>
+              <li>• Advertising Executive</li>
+              <li>• Content Strategist</li>
+              <li>• Corporate Communication Officer</li>
+              <li>• Digital Marketing Specialist</li>
+              <li>• Event Coordinator</li>
+            </ul>
+            
+            
+          
+            
+            <li><strong>Join Us Today!</strong></li>
+            <p>Be part of a dynamic community that values creativity, effective communication, and excellence. Enroll in the AB Communication program and unlock your potential to shape the future of media, marketing, and public relations through innovation, collaboration, and strategic thinking.</p>
+            
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Mandaluyong College of Science and Technology. All Rights Reserved.</p>
+  </footer>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+    function toggleCourse(courseElement) {
+      const allCourses = document.querySelectorAll('.course-card');
+
+      if (courseElement.classList.contains('expanded')) {
+        // Close the currently expanded course
+        courseElement.classList.remove('expanded');
+        allCourses.forEach(course => course.classList.remove('hidden'));
+      } else {
+        // Expand the clicked course and hide others
+        allCourses.forEach(course => {
+          if (course !== courseElement) {
+            course.classList.add('hidden');
+          } else {
+            course.classList.add('expanded');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
